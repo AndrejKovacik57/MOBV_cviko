@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">MOBV app</string>
+    <string name="registracia">Register</string>
+    <string name="prihlasenie">Login</string>
+    <string name="zadajte_email">Enter email</string>
+    <string name="username">Username:</string>
+    <string name="zadajte_username">Enter username</string>
+    <string name="password">Password</string>
+    <string name="zadajte_password">Enter password</string>
+    <string name="zadajte_password_repeat">Repeat password</string>
+    <string name="odoslat">Send</string>
+    <string name="enail">Enail</string>
+    <string name="login_activity">Login</string>
+    <string name="register_activity">Register</string>
+    <string name="zadanie">Exercise</string>
+    <string name="add">add</string>
+    <string name="profile">Profile</string>
+    <string name="odhlasit_sa">Odhlásiť sa</string>
+    <string name="nacitaj_profil">Načítaj profil</string>
+    <string name="delete_picture_button">Vymaž fotku</string>
+    <string name="upload_picture_button">Načítaj fotku</string>
+</resources>

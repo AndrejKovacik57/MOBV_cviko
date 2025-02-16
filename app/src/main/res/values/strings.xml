@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MOBV aplikacia</string>
+    <string name="registracia">Registracia</string>
+    <string name="prihlasenie">Prihlasenie</string>
+    <string name="zadajte_email">Zadajte email</string>
+    <string name="username">Prihlasovacie meno:</string>
+    <string name="zadajte_username">Zadajte prihlasovacie meno</string>
+    <string name="password">Heslo</string>
+    <string name="zadajte_password">Zadajte heslo</string>
+    <string name="zadajte_password_repeat">Opakujte heslo</string>
+    <string name="odoslat">Odoslať</string>
+    <string name="enail">Enail</string>
+    <string name="login_activity">Prihlasenie</string>
+    <string name="register_activity">Registracia</string>
+    <string name="mapbox_access_token" translatable="false" tools:ignore="UnusedResources">pk.eyJ1IjoieGtvdmFjaWthMSIsImEiOiJjbTJrcjBkOGUwNGI2Mm1yOTNwMTNud3I3In0.SOFfa4iNkFDgUqGhVMu-Hw</string>
+    <string name="zadanie">Zadanie</string>
+    <string name="add">pridaj</string>
+    <string name="profile">Profil</string>
+    <string name="odhlasit_sa">Odhlásiť sa</string>
+    <string name="nacitaj_profil">Načítaj profil</string>
+    <string name="share_my_location" tools:ignore="MissingTranslation">Zdielanie mojej lokácie</string>
+    <string name="delete_picture_button">Vymaž fotku</string>
+    <string name="upload_picture_button">Načítaj fotku</string>
+    <string name="change_password">Zmena hesla\n</string>
+</resources>

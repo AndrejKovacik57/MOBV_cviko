@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentIntro">
+
+        <action
+            android:id="@+id/action_intro_login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_intro_signup"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_intro_feed"
+            app:popUpToInclusive="true"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentLogin"
+        android:label="LoginFragment">
+
+        <action
+            android:id="@+id/action_login_feed"
+            app:popUpToInclusive="true"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentRegister"
+        android:label="RegisterFragment">
+        <action
+            android:id="@+id/action_register_feed"
+            app:popUpToInclusive="true"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentFeed"
+        android:label="FeedFragment">
+
+        <action
+            android:id="@+id/action_feedFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentMap"
+        android:label="MapFragment" >
+
+        <action
+            android:id="@+id/action_mapFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentProfil"
+        android:label="ProfileFragment">
+        <action
+            android:id="@+id/action_profil_intro"
+            app:popUpToInclusive="true"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_profile_changePassword"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_to_feed"
+        app:destination="@id/feedFragment" />
+    <action
+        android:id="@+id/action_to_map"
+        app:destination="@id/mapFragment" />
+
+    <action
+        android:id="@+id/action_to_profile"
+        app:destination="@id/profilFragment" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentChangePassword" />
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.mobvcviko1.fragments.FragmentUserInfo">
+        <!-- Define required arguments -->
+        <argument
+            android:name="userId"
+            app:argType="string" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="userPhoto"
+            app:argType="string" />
+        <argument
+            android:name="userLat"
+            app:argType="float" />
+        <argument
+            android:name="userRadius"
+            app:argType="float" />
+        <argument
+            android:name="userLon"
+            app:argType="float" />
+        <argument
+            android:name="updated"
+            app:argType="string" />
+    </fragment>
+</navigation>
